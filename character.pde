@@ -1,7 +1,6 @@
 float agitation = 0;
  
 void setup() {
-    size(400, 400);
 }
  
 void setAgitation(float newAgitation) {
@@ -12,8 +11,6 @@ void draw() {
     background(0);
     stroke(255);
     noFill();
-    
-    setAgitation(map(mouseX, 0, width, 0, 1));
     
     float phase = frameCount * 0.025;
     float phaseAddition = map(sin(phase), -1, 1, 0, 0.75);
