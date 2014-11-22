@@ -8,7 +8,6 @@ class MaartenWitteveen extends Creature {
     }
      
     void draw(float x, float y) {
-        background(0);
         stroke(255);
         noFill();
         
