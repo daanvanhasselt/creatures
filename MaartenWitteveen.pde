@@ -1,5 +1,9 @@
 class MaartenWitteveen extends Creature {
     float agitation = 0;
+
+    MaartenWitteveen(float x, float y) {
+        super(x, y);
+    }
      
     void setup() {
     }
