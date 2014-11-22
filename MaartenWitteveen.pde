@@ -8,6 +8,9 @@ class MaartenWitteveen extends Creature {
     }
      
     void draw(float x, float y) {
+        pushMatrix();
+        scale(0.8);
+
         stroke(255);
         noFill();
         
@@ -34,5 +37,7 @@ class MaartenWitteveen extends Creature {
             phase = phase + phaseAddition;
             phaseAddition += 0.1;
         }
+
+        popMatrix();
     }
 }
