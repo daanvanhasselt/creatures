@@ -9,7 +9,9 @@ class MaartenWitteveen extends Creature {
      
     void draw(float x, float y) {
         pushMatrix();
+        translate(x, y);
         scale(0.8);
+        translate(-x, -y);
 
         stroke(255);
         noFill();
